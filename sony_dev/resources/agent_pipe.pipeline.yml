@@ -1,0 +1,12 @@
+resources:
+  pipelines:
+    pipeline_agent_pipeline:
+      name: agent_pipeline
+      libraries:
+        - glob:
+            include: /Workspace/Users/tlyemul@gmail.com/agent_pipeline/transformations/**
+      schema: bronze
+      photon: true
+      catalog: sony_dev
+      serverless: true
+      root_path: /Workspace/Users/tlyemul@gmail.com/agent_pipeline
